@@ -1,0 +1,718 @@
+{
+  "name": "",
+  "children": [
+    {
+      "id": 86692,
+      "name": "Zygmunt Janiszewski",
+      "school": "Uniwersytet Warszawski",
+      "students": [
+        "Kazimierz Kuratowski"
+      ],
+      "children": [
+        {
+          "id": 24546,
+          "name": "Kazimierz Kuratowski",
+          "school": "Uniwersytet Warszawski",
+          "students": [
+            "Samuel Eilenberg",
+            "Ryszard Engelking",
+            "Jerzy Jaroń",
+            "Jozef Krasinkiewicz",
+            "Andrzej Mostowski",
+            "Stanisław Mrówka",
+            "Stanisław Ulam"
+          ],
+          "children": [
+            {
+              "id": 489,
+              "name": "Andrzej Mostowski",
+              "school": "Uniwersytet Warszawski",
+              "students": [
+                "Zofia Adamowicz",
+                "Krzysztof Apt",
+                "Maciej Brynski",
+                "Andrzej Ehrenfeucht",
+                "Andrzej Grzegorczyk",
+                "Wojciech Guzicki",
+                "Andrzej Janiczak",
+                "Stanislaw Krajewski",
+                "Michal Krynicki",
+                "Moshe  Machover",
+                "Mihály Makkai",
+                "Wiktor Marek",
+                "Janusz Onyszkiewicz",
+                "Helena Rasiowa",
+                "Roman Sikorski",
+                "Kazimierz Wisniewski",
+                "Andrzej Zarach",
+                "Pawel Zbierski"
+              ],
+              "children": [
+                {
+                  "id": 22600,
+                  "name": "Roman Sikorski",
+                  "school": "Uniwersytet Warszawski",
+                  "students": [
+                    "Karol Krzyżewski",
+                    "Maciej Maczynski",
+                    "Tadeusz Traczyk"
+                  ],
+                  "children": [
+                    {
+                      "id": 69809,
+                      "name": "Karol Krzyżewski",
+                      "school": "Politechnika Warszawska",
+                      "students": [
+                        "Paweł Góra",
+                        "Wojciech Hyb",
+                        "Janina Kotus",
+                        "Feliks Przytycki"
+                      ],
+                      "children": [
+                        {
+                          "id": 137002,
+                          "name": "Janina Kotus",
+                          "school": "Politechnika Warszawska",
+                          "students": [
+                            "Agnieszka Badeńska",
+                            "Piotr Gałązka",
+                            "Bartłomiej Skorulski"
+                          ],
+                          "children": [
+                            {
+                              "id": 155901,
+                              "name": "Agnieszka Badeńska",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 162783,
+                              "name": "Piotr Gałązka",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 155910,
+                              "name": "Bartłomiej Skorulski",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 127955,
+                          "name": "Feliks Przytycki",
+                          "school": "Institute of Mathematics, Polish Academy of Sciences",
+                          "students": [
+                            "Krzysztof Baranski",
+                            "Ludwik Jaksztas",
+                            "Boguslawa Karpinska",
+                            "Mormul Piotr",
+                            "Michal Rams",
+                            "Justyna Signerska",
+                            "Mariusz Urbanski",
+                            "Anna Zdunik"
+                          ],
+                          "children": [
+                            {
+                              "id": 130278,
+                              "name": "Ludwik Jaksztas",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 130383,
+                              "name": "Boguslawa Karpinska",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 75416,
+                      "name": "Tadeusz Traczyk",
+                      "school": "Politechnika Warszawska",
+                      "students": [
+                        "Zbigniew Lonc",
+                        "Maciej Maczynski",
+                        "Anna Romanowska",
+                        "Miroslaw Truszczynski"
+                      ],
+                      "children": [
+                        {
+                          "id": 126075,
+                          "name": "Anna Romanowska",
+                          "school": "Politechnika Warszawska",
+                          "students": [
+                            "T. Brengos",
+                            "Bartosz Jabłoński",
+                            "K. Matczak",
+                            "A. Mucka",
+                            "Agata Pilitowska",
+                            "Krzysztof Pszczoła",
+                            "Barbara Roszkowska-Lech",
+                            "P. Slusarski",
+                            "Michał Stronkowski",
+                            "Shaban Traina",
+                            "Elżbieta Zając",
+                            "Anna Zamojska-Dzienio"
+                          ],
+                          "children": [
+                            {
+                              "id": 149083,
+                              "name": "T. Brengos",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 189154,
+                              "name": "Bartosz Jabłoński",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126084,
+                              "name": "K. Matczak",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126086,
+                              "name": "A. Mucka",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126080,
+                              "name": "Agata Pilitowska",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126082,
+                              "name": "Krzysztof Pszczoła",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126078,
+                              "name": "Barbara Roszkowska-Lech",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 149082,
+                              "name": "P. Slusarski",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126085,
+                              "name": "Michał Stronkowski",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126081,
+                              "name": "Shaban Traina",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126079,
+                              "name": "Elżbieta Zając",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 126083,
+                              "name": "Anna Zamojska-Dzienio",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 162216,
+                          "name": "Zbigniew Lonc",
+                          "school": "Politechnika Warszawska",
+                          "students": [
+                            "Krzysztof Brys",
+                            "Muktar Elzobi",
+                            "Pawel Naroski",
+                            "Krzysztof Parol",
+                            "Monika Pszczola",
+                            "Paweł Rzążewski",
+                            "Michal Tuczynski"
+                          ],
+                          "children": [
+                            {
+                              "id": 165964,
+                              "name": "Muktar Elzobi",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 165969,
+                              "name": "Pawel Naroski",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 165963,
+                              "name": "Krzysztof Parol",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 165966,
+                              "name": "Monika Pszczola",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            },
+                            {
+                              "id": 165970,
+                              "name": "Michal Tuczynski",
+                              "school": "Politechnika Warszawska",
+                              "students": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 107317,
+                          "name": "Miroslaw Truszczynski",
+                          "school": "Politechnika Warszawska",
+                          "students": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 75498,
+                      "name": "Maciej Maczynski",
+                      "school": "Politechnika Warszawska",
+                      "students": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12545,
+      "name": "Wacław Sierpiński",
+      "school": "Uniwersytet Warszawski",
+      "students": [
+        "Adolf Lindenbaum",
+        "Edward Marczewski",
+        "Stefan Mazurkiewicz",
+        "Jerzy Neyman",
+        "Andrzej Rotkiewicz",
+        "Stanisław Ruziewicz",
+        "Andrzej Schinzel",
+        "Antoni Wakulicz",
+        "Zygmunt Zalcwasser"
+      ],
+      "children": [
+        {
+          "id": 131518,
+          "name": "Antoni Wakulicz",
+          "school": "Uniwersytet Warszawski",
+          "students": [
+            "Jan Ambrosiewicz",
+            "Ryszard Bartłomiejczyk",
+            "Jerzy Kaczmarski",
+            "Eugeniusz Kowalski",
+            "Kazimierz Szymiczek",
+            "Władysław Wrona"
+          ],
+          "children": [
+            {
+              "id": 133360,
+              "name": "Jan Ambrosiewicz",
+              "school": "University Pedagogical School, Katowice",
+              "students": [
+                "Czesław Bagiński"
+              ],
+              "children": [
+                {
+                  "id": 168141,
+                  "name": "Czesław Bagiński",
+                  "school": "Politechnika Warszawska",
+                  "students": [
+                    "Agnieszka Stocka"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 132815,
+      "name": "Władysław Nikliborc",
+      "school": "University of Lwów",
+      "students": [
+        "Zygmunt Charzyński"
+      ],
+      "children": [
+        {
+          "id": 132662,
+          "name": "Zygmunt Charzyński",
+          "school": "Uniwersytet Warszawski",
+          "students": [
+            "Izydor Dziubiński",
+            "Julian Ławrynowicz",
+            "Andrzej Nowakowski",
+            "Lucjan Siewierski",
+            "Janina Śladkowska-Zahorska",
+            "Włodzimierz Waliszewski"
+          ],
+          "children": [
+            {
+              "id": 132016,
+              "name": "Włodzimierz Waliszewski",
+              "school": "Uniwersytet Łódzki",
+              "students": [
+                "Grzegorz Andrzejczak",
+                "Nadzieja Borowik",
+                "Kazimierz Cegiełka",
+                "Tadeusz Konik",
+                "Jan Kubarski",
+                "Andrzej Piątkowski",
+                "Maciej Tkacz",
+                "Paweł Walczak"
+              ],
+              "children": [
+                {
+                  "id": 191656,
+                  "name": "Nadzieja Borowik",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7383,
+      "name": "Hugo Steinhaus",
+      "school": "University of Lwów",
+      "students": [
+        "Stefan Banach",
+        "Z. W. (Bill) Birnbaum",
+        "Ping Cheng",
+        "Henryk Fast",
+        "Marek Fisz",
+        "Mark Kac",
+        "Ignacy Kotlarski",
+        "Józef Łukaszewicz",
+        "Władysław Orlicz",
+        "Julian Perkal",
+        "Agnieszka Plucińska",
+        "Aleksander Rajchman",
+        "Juliusz Schauder",
+        "Stanisław Trybuła",
+        "Sala Weinlös",
+        "Andrzej Zięba"
+      ],
+      "children": [
+        {
+          "id": 125947,
+          "name": "Agnieszka Plucińska",
+          "school": "Uniwersytet Wrocławski",
+          "students": [
+            "Jacek Wesolowski"
+          ],
+          "children": [
+            {
+              "id": 125944,
+              "name": "Jacek Wesolowski",
+              "school": "Politechnika Warszawska",
+              "students": [
+                "Konstancja Bobecka",
+                "Joanna Chachulska",
+                "Anna Dembinska",
+                "Jan Kowalski",
+                "Piotr Witkowski"
+              ],
+              "children": [
+                {
+                  "id": 125996,
+                  "name": "Konstancja Bobecka",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                },
+                {
+                  "id": 185993,
+                  "name": "Joanna Chachulska",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                },
+                {
+                  "id": 125997,
+                  "name": "Anna Dembinska",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                },
+                {
+                  "id": 185995,
+                  "name": "Jan Kowalski",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                },
+                {
+                  "id": 185994,
+                  "name": "Piotr Witkowski",
+                  "school": "Politechnika Warszawska",
+                  "students": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 51907,
+          "name": "Władysław Orlicz",
+          "school": "University of Lwów",
+          "students": [
+            "Jerzy Albrycht",
+            "Andrzej Alexiewicz",
+            "Feliks Barański",
+            "Dobiesław Bobrowski",
+            "Victor Bogdan",
+            "Czeslaw Bylka",
+            "Quan-Fu Ci",
+            "Jaroslaw Ciemnoczołowski",
+            "Zbigniew Ciesielski",
+            "Lech Drewnowski",
+            "Maria Filar",
+            "Barbara Firlej",
+            "Wojciech Friedrich",
+            "Danuta Jach",
+            "Marian Jarosz",
+            "Marek Karpiński",
+            "Franciszek Klorek",
+            "Stanisław Knapowski",
+            "Bogdan Kotkowski",
+            "Przemysław Kranz",
+            "Iwo Labuda",
+            "Ryszard Leśniewicz",
+            "Lech Maligranda",
+            "Wanda Matuszewska",
+            "Józef Meder",
+            "Julian Musielak",
+            "Jadwiga Pawłowska",
+            "Zbigniew Polniakowski",
+            "Jerzy Radecki",
+            "Zbigniew Ratajczak",
+            "Henryk Ratajski",
+            "Jurand Ryterski",
+            "Henryk Sampławski",
+            "Ryszard Serafin",
+            "Stanisław Szufla",
+            "Roman Taberski",
+            "Eustachy Tarnawski",
+            "Adam Wachułka",
+            "Aleksander Waszak",
+            "Henryk Wiśniewski"
+          ],
+          "children": [
+            {
+              "id": 51936,
+              "name": "Zbigniew Ciesielski",
+              "school": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
+              "students": [
+                "Marek Beśka",
+                "Tomasz Bojdecki",
+                "Joachim Domsta",
+                "Karol Dziedziul",
+                "Hakop Hakopian",
+                "Anna Kamont",
+                "Andrzej Kłopotowski",
+                "Stanisław Kwapień",
+                "Stanisław Ropela",
+                "Andrzej Russek",
+                "Wojciech Szatzschneider",
+                "Jerzy Zabczyk"
+              ],
+              "children": [
+                {
+                  "id": 18596,
+                  "name": "Stanisław Kwapień",
+                  "school": "Institute of Mathematics, Polish Academy of Sciences",
+                  "students": [
+                    "Osekowski Adam",
+                    "Włodzimierz Bryc",
+                    "Pawel Hitczenko",
+                    "Jacek Jakubowski",
+                    "Rafal Latala",
+                    "Piotr Nowak",
+                    "Krzysztof Oleszkiewicz",
+                    "Marek Piasecki",
+                    "Jerzy Sawa",
+                    "Leszek Słomiński",
+                    "Wlodzimierz Smolenski",
+                    "Rafał Sztencel",
+                    "Bogusław Szymanski",
+                    "Bednorz Witold",
+                    "Piotr Zaremba"
+                  ],
+                  "children": [
+                    {
+                      "id": 57480,
+                      "name": "Włodzimierz Bryc",
+                      "school": "Politechnika Warszawska",
+                      "students": [
+                        "Tamer Oraby"
+                      ]
+                    },
+                    {
+                      "id": 57597,
+                      "name": "Wlodzimierz Smolenski",
+                      "school": "Politechnika Warszawska",
+                      "students": []
+                    }
+                  ]
+                },
+                {
+                  "id": 86241,
+                  "name": "Jerzy Zabczyk",
+                  "school": "University of Gdansk",
+                  "students": [
+                    "Tomasz Bielecki",
+                    "Anna Chojnowska-Michalik",
+                    "Wojciech Jachimiak",
+                    "Anna Milian",
+                    "Szymon Peszat",
+                    "Anna Rusinek",
+                    "Jaroslaw Sobczyk",
+                    "Lukasz Stettner",
+                    "Gianmario Tessitore"
+                  ],
+                  "children": [
+                    {
+                      "id": 124348,
+                      "name": "Lukasz Stettner",
+                      "school": "Institute of Mathematics, Polish Academy of Sciences",
+                      "students": [
+                        "Michal Baran",
+                        "Lukasz Delong",
+                        "Ewa Drabik",
+                        "Grzegorz Halaj",
+                        "Marek Kocinski",
+                        "Rafal Kucharski",
+                        "Michal Motoczynski",
+                        "Jan Palczewski",
+                        "Joanna Piasecka",
+                        "Marcin Pitera",
+                        "Roman Sadovyj"
+                      ],
+                      "children": [
+                        {
+                          "id": 124925,
+                          "name": "Ewa Drabik",
+                          "school": "Politechnika Warszawska",
+                          "students": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 127407,
+                      "name": "Jaroslaw Sobczyk",
+                      "school": "Politechnika Warszawska",
+                      "students": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12681,
+          "name": "Stefan Banach",
+          "school": "University of Lwów",
+          "students": [
+            "Stanislaw Mazur"
+          ],
+          "children": [
+            {
+              "id": 13056,
+              "name": "Stanislaw Mazur",
+              "school": "University of Lwów",
+              "students": [
+                "Maciej Altman",
+                "Mieczyslaw Altman",
+                "Czeslaw Bessaga",
+                "Andrzej Birkholc",
+                "Ryszard Bittner",
+                "Victor Bogdan",
+                "Tomasz Bojdecki",
+                "Lej Gan",
+                "Witold Kolodziej",
+                "Tadeusz Lezanski",
+                "Wan Lu",
+                "Hanna Marcinkowska",
+                "Krzysztof Maurin",
+                "Bogdan Mi^Ü",
+                "Aleksander Pełczyński",
+                "Stefan Rolewicz",
+                "Zbigniew Sawon",
+                "Maciej Skwarczyński",
+                "Wieslaw Szlenk",
+                "A. Warzecha",
+                "Lech Wlodarski",
+                "Wieslaw Zelazko"
+              ],
+              "children": [
+                {
+                  "id": 30182,
+                  "name": "Krzysztof Maurin",
+                  "school": "Uniwersytet Warszawski",
+                  "students": [
+                    "Janusz Czyż",
+                    "Krzysztof Gawędzki",
+                    "Jerzy  Kijowski",
+                    "Jacek Komorowski",
+                    "Witold Kondracki",
+                    "Wojciech Lisiecki",
+                    "Kazimierz Napiórkowski",
+                    "Andreas Nestke",
+                    "Jan Rogulski",
+                    "Wiktor Szczyrba",
+                    "Janusz Szmidt",
+                    "Paweł Urbański",
+                    "Antoni Wawrzyńczyk",
+                    "Stanisław Woronowicz"
+                  ],
+                  "children": [
+                    {
+                      "id": 216475,
+                      "name": "Janusz Czyż",
+                      "school": "Politechnika Warszawska",
+                      "students": []
+                    },
+                    {
+                      "id": 216476,
+                      "name": "Jan Rogulski",
+                      "school": "Politechnika Warszawska",
+                      "students": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

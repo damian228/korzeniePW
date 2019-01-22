@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+
+body {
+  color: #111111;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#body {
+  padding-left: 20px;
+}
+
+.description {
+  width: 80%;
+}
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;
+    padding: 5px;      
+    background: #d1f4fa; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+div.tooltip .students {
+  text-align: left;
+  line-height: 16px;
+  padding-left: 10px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: lightblue;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <h2>Korzenie Politechniki Warszawskiej</h2>
+      <div class="description">Strona umożliwia analizę genaologi (w sensie doktoratów) pracowników Politechniki Warszawskiej.
+       Zbadano związek pracowników PW z Warszawską i Lwowską szkołą matematyczną. Po kliknięciu w węzeł lista jego potomków
+       zostanie rozwinięta / zwinięta. </div>
+    </div>
+    <script type="text/javascript">
+
+var m = [20, 10, 20, 10],
+    w = 1200 - m[1] - m[3],
+    h = 800 - m[0] - m[2],
+    i = 0,
+    root;
+
+var tree = d3.layout.tree()
+    .size([h, w]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var vis = d3.select("#body").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+var color = d3.scale.category10();
+var div = d3.select("body").append("div") 
+    .attr("class", "tooltip")       
+    .style("opacity", 0);
+
+d3.json("data/tree.json", function(json) {
+  root = json;
+  root.x0 = h / 2;
+  root.y0 = 0;
+
+  function toggleAll(d) {
+    if (d.children) {
+      d.children.forEach(toggleAll);
+      toggle(d);
+    }
+  }
+
+  // Initialize the display to show a few nodes.
+  //root.children.forEach(toggleAll);
+//#toggle(root.children[1]);
+  toggle(root.children[0].children[0].children[0].children[0])
+  update(root);
+});
+
+function getTooltipHtml(node) {
+  if (!node.school && !node.students) {
+    return "root";
+  }
+  var result = "";
+  if (node.school !== "") {
+    result = node.school + "</br>";
+  }
+  if (node.students.length > 0) {
+    result += "<div class='list'>Lista studentów:</br><div class='students'>";
+    for (var i =  0; i < node.students.length; i++) {
+      if (node.students[i] !== "") {
+        result += node.students[i]+"</br>";
+      }
+    }
+    result += "</div></div>"
+  }
+  return result;
+}
+
+function update(source) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse();
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 145; });
+
+  // Update the nodes…
+  var node = vis.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("svg:g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", function(d) { toggle(d); update(d); })
+      .on("mouseover", function(d) {
+            var students = "Lista studentów:</br>" + d.students   
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            div .html(getTooltipHtml(d))
+                .style("left", (d3.event.pageX) + "px")   
+                .style("top", (d3.event.pageY - 28) + "px");  
+            })          
+        .on("mouseout", function(d) {   
+            div.transition()    
+                .duration(500)    
+                .style("opacity", 0);
+        });
+
+  nodeEnter.append("svg:circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
+      .style("stroke-width", "3px")
+      .style("stroke", function(d) { return color(d.school); });;
+
+  nodeEnter.append("svg:text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 7; })
+      .attr("y", function(d) { return d.children || d._children ? -10 : 0; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "start"; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = vis.selectAll("path.link")
+      .data(tree.links(nodes), function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("svg:path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      })
+    .transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children.
+function toggle(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+}
+        
+var chartDesc = d3.select("#body").append("div")
+    .attr("class", "description")
+    .text("Poniższy wykres przedstawia listę członków Warszawskiej i Lwowskiej szkoły matematycznej wraz z Liczbą doktorów Politechniki Warszawskiej obecnych w liście ich potomków. Klknięcie w słupek powoduje otwarcie strony Wikipedii z wybranym matematykiem");
+
+
+var margin = {top: 20, right: 20, bottom: 70, left: 40},
+    width = 1024 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+// Parse the date / time
+var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+
+var y = d3.scale.linear().range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(10);
+
+var svg = d3.select("#body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("data/studentCount.csv", function(error, data) {
+
+    data.forEach(function(d) {
+        d.studentCount = +d.studentCount;
+    });
+  
+
+  x.domain(data.map(function(d) { return d.name; }));
+  y.domain([0, d3.max(data, function(d) { return d.studentCount; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -30)
+    .attr("x", -200)
+      .attr("dy", ".710em")
+      .style("text-anchor", "end")
+      .text("Liczba Studentów");
+
+  svg.selectAll("bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.name); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.studentCount); })
+      .attr("height", function(d) { return height - y(d.studentCount); })
+    .on('click', function(d) { window.open(d.url);});
+
+});
+
+    </script>
+  </body>
+</html>
